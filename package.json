@@ -1,0 +1,52 @@
+{
+  "name": "base-ecosystem-tools",
+  "version": "1.0.0",
+  "description": "A comprehensive toolkit for Base blockchain development including smart contract templates, deployment scripts, and developer utilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "hardhat compile",
+    "deploy:base": "hardhat run scripts/deploy.js --network base",
+    "deploy:base-sepolia": "hardhat run scripts/deploy.js --network baseSepolia",
+    "verify": "hardhat verify",
+    "lint": "eslint . --ext .js,.ts",
+    "format": "prettier --write .",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "base",
+    "blockchain",
+    "ethereum",
+    "smart-contracts",
+    "web3",
+    "defi",
+    "layer2",
+    "coinbase",
+    "development-tools"
+  ],
+  "author": "davidsebil",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "ethers": "^6.8.0",
+    "hardhat": "^2.19.0",
+    "dotenv": "^16.3.1",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "jest": "^29.7.0",
+    "eslint": "^8.55.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wearedood/base-ecosystem-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wearedood/base-ecosystem-tools/issues"
+  },
+  "homepage": "https://github.com/wearedood/base-ecosystem-tools#readme"
+}
